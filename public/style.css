@@ -1,0 +1,22 @@
+@import url('http://fonts.googleapis.com/css?family=Varela+Round&v2'); 
+body { background-color: #EEEEEE; color: #36393D; font-family: 'Varela Round', sans-serif; font-size: 12px; font-weight: normal; margin: 10px 30px 30px 30px; } 
+a { text-decoration: none; color: #bf1010; } 
+a:hover { text-decoration: underline; } 
+h1 { font-size: 15px; font-weight: normal; color: #bf1010; margin: 0px; } 
+.proc { font-size: 14px; font-weight: normal; } 
+.procInfo div { background-color: #ccc; padding: 2px 8px 2px 4px; border-radius: 6px; float: right; margin-right: 10px; text-align: right; min-width: 95px; } 
+.procInfo { width: 550px; } 
+.procInfo h1 { padding-top: 2px; } 
+.duration { width: 45px; } 
+#procList { float: left; height: 670px; overflow-x: hidden; overflow-y: scroll; } 
+#logger { margin-left: 575; height: 670px; width: 570px; overflow-x: hidden; overflow-y: scroll; } 
+#logEventBarContainer { width: 550px; overflow: hidden; margin: 16px 6px 16px 585px; } 
+#logProcBarContainer { float: left; } 
+.event { padding: 3px 7px 3px 4px; } 
+.event:nth-child(even) {  } 
+.event:nth-child(odd) { background-color: #DDD; border-radius: 4px; } 
+.event span.date { float: right; } 
+.event span.label { color: #999999; } 
+.appIcon { background-repeat: no-repeat; background-position: 4px; padding-left: 26px; line-height: 20px; } 
+#viewAll { background-color: #DDD; margin-bottom: 10px; display: block; width: 45px; padding: 4px; border-radius: 4px; border: 1px solid #CCC; text-align: center; } 
+#viewAll:hover { border: 1px solid #AAA; }
