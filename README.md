@@ -17,8 +17,8 @@ Proclog uses MongoDB for storing events, processes and registered client applica
 
 Use `npm` to install needed modules. Missing modules will stop `proclog` from loading, error messages indicate which module is missing. You should run fine with:
 
-   $ npm install express websocket-server fs
-   $ npm install mongodb --mongodb:native
+    $ npm install express websocket-server fs
+    $ npm install mongodb --mongodb:native
 
 Future versions of `proclog` will be compatible with the non-native version of mongodb.
 
