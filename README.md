@@ -1,4 +1,8 @@
-Readme and installation instructions will follow...
+`proclog` is a flexible small event logger written in NodeJS. Events can be logged over a simple HTTP interface. Every event has the mandatory fields `category` and `action`, properties `key` and  `value` are optional and can be set on events and processes as well.
+
+For live monitoring an clean web interface is available using web socket for enabling near-real-time monitoring. Events and processes will be assigned to an application id and user. Events can be grouped in processes, buts that's optional…
+
+
 
 ## Installation
 
