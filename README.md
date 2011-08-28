@@ -1,5 +1,16 @@
 `proclog` is a flexible small remote event logger written in Node with flexible support for custom hooks and actions. Events can be logged over a simple HTTP interface with addresses for starting and stopping processes and firing events. Every event and process needs the mandatory keys `category` and `action`, properties `key` and `value` are optional. Events and processes will be assigned to an application id and user. Events can be grouped in processes, buts that's optional…
 
+ * **Usage**
+   * Starting proclog
+   * Log events and processes
+   * Wrappers in PHP and NodeJS
+   * Monitoring events
+   * Custom event hooks
+ * **Installation**
+   * Preparing MongoDB
+   * Node modules
+ * **MIT License**
+
 ## Usage
 ### Starting proclog
 For keeping proclog up running I prefer using forever, bit in general just fire up proclog with `node app.js` and all services are started
@@ -22,8 +33,8 @@ Starting an event is the only request you have to wait for its response. The req
 ### Wrappers for easy access
 Wrappers for remote logging are available for
 
- * [NodeJS](http://google.de)
- * [PHP](http://google.de)
+ * NodeJS: [node-proclog-client](https://github.com/semu/node-proclog-client)
+ * PHP: [php-proclog-client](http://google.de)
 
 Feel free to fork them or create your own ones. Please let know about new loggers so I can add them to the list :)
 
@@ -71,3 +82,25 @@ Use `npm` to install needed modules.
     $ npm install mongodb --mongodb:native
 
 Future versions of `proclog` will be compatible with the non-native version of mongodb.
+
+## License
+
+Copyright (C) 2011 by Sebastian Müller
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
