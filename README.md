@@ -34,7 +34,6 @@ Starting an event is the only request you have to wait for its response. The req
 Wrappers for remote logging are available for
 
  * NodeJS: [node-proclog-client](https://github.com/semu/node-proclog-client)
- * PHP: [php-proclog-client](http://google.de)
 
 Feel free to fork them or create your own ones. Please let know about new loggers so I can add them to the list :)
 
