@@ -2,7 +2,19 @@
 
 For live monitoring an clean web interface is available using web socket for enabling near-real-time monitoring. Events and processes will be assigned to an application id and user. Events can be grouped in processes, buts that's optional…
 
+#### Running proclog
+For keeping proclogmup running I am using forever, fire up proclog and all services are started:
 
+    $ node app.js
+
+#### Log events and processes
+Events can be logged with simple HTTP GET requests. You can start and stop processes and store events, processes are completly optional but enable more detailed logging if needed.
+
+    http://hostname:8003/
+    http://hostname:8003/
+    http://hostname:8003/
+
+Starting an event is the only request you have to wait for its response. Requests for stopping processes and firing events can be done in background. Do not expect any useful response.
 
 ## Installation
 
